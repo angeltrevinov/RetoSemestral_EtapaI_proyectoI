@@ -13,7 +13,19 @@
 using namespace std;
 
 int main() {
-    //tarea I Etapa I Reto Semestral 
-    cout << "Hello, World!\n";
+    
+	int n; // the number of values 
+	int m; // the number of operations
+	int a, b, k; // a from what position to start, b from what position to stop and k what number to add
+
+	cin >> n; 
+	cin >> m; 
+
+	int array[n]; 
+
+	cout << array[0];
+
+	system("pause");
+
     return 0;
 }
