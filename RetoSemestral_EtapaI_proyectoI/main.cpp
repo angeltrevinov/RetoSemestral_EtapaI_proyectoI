@@ -12,6 +12,12 @@
 
 using namespace std;
 
+void O(int a, int b, int k, int array[100], int n){
+	for(a < b; a++){
+		array[a] = array[a] + k;
+	}
+}
+
 int main() {
     
 	int n; // the number of values 
@@ -21,11 +27,23 @@ int main() {
 	cin >> n; 
 	cin >> m; 
 
-	int array[n]; 
+	int array[100]; 
 
-	cout << array[0];
+	int cont = 0; 
 
-	system("pause");
+	while(cont < m){
+
+		O(a, b, k, array, n); 
+		cont++; 
+	}
+
+	int mayor = 0;
+	for(int i = 0; i < n; i ++){
+		if(mayor < array[i])
+			mayor = array[i];
+	} 
+
+	cout << mayor <<endl; 
 
     return 0;
 }
