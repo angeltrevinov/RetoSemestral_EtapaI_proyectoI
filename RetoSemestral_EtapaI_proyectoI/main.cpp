@@ -13,8 +13,8 @@
 using namespace std;
 
 void O(int a, int b, int k, int array[100], int n){
-	for(a < b; a++){
-		array[a] = array[a] + k;
+    for(int i = a; i < b; i++){
+		array[i] = array[i] + k;
 	}
 }
 
@@ -32,7 +32,8 @@ int main() {
 	int cont = 0; 
 
 	while(cont < m){
-
+        
+        cin >> a >> b >> k;
 		O(a, b, k, array, n); 
 		cont++; 
 	}
