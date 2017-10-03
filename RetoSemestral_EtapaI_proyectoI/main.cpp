@@ -12,40 +12,28 @@
 
 using namespace std;
 
-void O(long a, long b, long k, long array[10^7], long n){
-    if(a > 0){
-        a--;
-    }
-    for(long i = a; i < b; i++){
-		array[i] = array[i] + k;
-	}
-}
-
 int main() {
+    long int n,m, a, b, k, max=0;
     
-	long n; // the number of values
-	long m; // the number of operations
-	long a, b, k; // a from what position to start, b from what position to stop and k what number to add
+    cin>>n>>m;
     
-    cin >> n >> m;
-
-    long array[10^7] = {0};
-
-	int cont = 0; 
-
-	while(cont < m){
-        cin >> a >> b >> k;
-		O(a, b, k, array, n);
-		cont++; 
-	}
-
-	long mayor = 0;
-	for(int i = 0; i < n; i ++){
-		if(mayor < array[i])
-			mayor = array[i];
-	} 
-
-	cout << mayor <<endl; 
-
+    long int *array=new long int[n+1]();
+    
+    for(long int i=0; i<m; i++){
+        
+        cin>>a>>b>>k;
+        array[a]+=sum;
+        if((b+1)<=n)
+            array[b+1]-=sum;
+    }
+    
+    for(i=1;i<=n;i++){
+        
+        if(max< array[i])
+            max=array[i];
+        
+    }
+    
+    cout<<max;
     return 0;
 }
