@@ -34,7 +34,9 @@ int main() {
 	int cont = 0; 
 
 	while(cont < m){
-        cin >> a >> b >> k;
+        do{
+            cin >> a >> b >> k;
+            while((a > 0 && a < n) && (b > 0 && b < n));
 		O(a, b, k, array, n);
 		cont++; 
 	}
