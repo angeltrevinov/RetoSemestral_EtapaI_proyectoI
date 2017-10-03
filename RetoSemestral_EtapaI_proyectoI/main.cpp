@@ -12,7 +12,7 @@
 
 using namespace std;
 
-void O(int a, int b, int k, int array[100], int n){
+void O(int a, int b, int k, int array[10^7], int n){
     for(int i = a; i < b; i++){
 		array[i] = array[i] + k;
 	}
@@ -20,14 +20,14 @@ void O(int a, int b, int k, int array[100], int n){
 
 int main() {
     
-	int n; // the number of values 
+	int n; // the number of values
 	int m; // the number of operations
 	int a, b, k; // a from what position to start, b from what position to stop and k what number to add
+    
+    cin >> n;
+	cin >> m;
 
-	cin >> n; 
-	cin >> m; 
-
-	int array[100]; 
+    int array[10^7] = {0};
 
 	int cont = 0; 
 
