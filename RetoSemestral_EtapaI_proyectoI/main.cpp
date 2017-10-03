@@ -12,15 +12,6 @@
 
 using namespace std;
 
-void O(long a, long b, long k, long array[10^7], long n){
-    if(a > 0){
-        a--;
-    }
-    for(long i = a; i < b; i++){
-		array[i] = array[i] + k;
-	}
-}
-
 int main() {
     
 	long n; // the number of values
@@ -31,12 +22,12 @@ int main() {
 
     long array[10^7] = {0};
 
-	int cont = 0; 
-
-	while(cont < m){
+    for(int i = 0; i < m; i++){
         cin >> a >> b >> k;
-		O(a, b, k, array, n);
-		cont++; 
+        array[a] += k;
+        if((a+1) <= n ){
+            array[a+1] -= sum;
+        }
 	}
 
 	long mayor = 0;
@@ -49,3 +40,5 @@ int main() {
 
     return 0;
 }
+
+    
