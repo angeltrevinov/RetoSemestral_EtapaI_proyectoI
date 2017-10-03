@@ -16,9 +16,6 @@ void O(int a, int b, int k, int array[10^7], int n){
     if(a > 0){
         a--;
     }
-    if( b > 0){
-        b--;
-    }
     for(int i = a; i < b; i++){
 		array[i] = array[i] + k;
 	}
@@ -38,9 +35,8 @@ int main() {
 	int cont = 0; 
 
 	while(cont < m){
-        
         cin >> a >> b >> k;
-		O(a, b, k, array, n); 
+		O(a, b, k, array, n);
 		cont++; 
 	}
 
