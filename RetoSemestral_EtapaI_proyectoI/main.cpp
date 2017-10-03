@@ -13,7 +13,7 @@
 using namespace std;
 
 void O(int a, int b, int k, int array[10^7], int n){
-    for(int i = a; i < b; i++){
+    for(int i = a - 1; i < b -1; i++){
 		array[i] = array[i] + k;
 	}
 }
