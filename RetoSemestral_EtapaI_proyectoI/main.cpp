@@ -27,8 +27,7 @@ int main() {
 	long m; // the number of operations
 	long a, b, k; // a from what position to start, b from what position to stop and k what number to add
     
-    cin >> n;
-	cin >> m;
+    cin >> n >> m;
 
     long array[10^7] = {0};
 
