@@ -22,13 +22,15 @@ int main() {
         
         cin>>a>>b>>sum; //a start, b end, the sum to add
         array[a]+=sum; //adding the sum to that position and putting it in the sum
-        if((b+1)<=n) array[b+1]-=sum;
+        if((b+1)<=n)
+            array[b+1]-=sum;
     }
     
     //find the maximum value in the array
     for(i=1;i<= n;i++){
         x=x+array[i];
-        if(max<x) max=x;
+        if(max<x)
+            max=x;
         
     }
     
