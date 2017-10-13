@@ -1,4 +1,4 @@
-io/*
+/*
     Angel Odiel Treviño Villanueva
     A01336559
     Estructura de Datos
